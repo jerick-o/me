@@ -1,0 +1,229 @@
+/* AD343E (Accent) */
+.element1 {
+    background-color: #3a161a; /* darkest shade */
+    color: #ffffff; /* white text for contrast */
+}
+.element2 {
+    background-color: #501c21;
+    color: #ffffff;
+}
+.element3 {
+    background-color: #672328;
+    color: #ffffff;
+}
+.element4 {
+    background-color: #7d272f;
+    color: #ffffff;
+}
+.element5 {
+    background-color: #932b34;
+    color: #ffffff;
+}
+.element6 {
+    background-color: #ad343e; /* original */
+    color: #ffffff;
+}
+.element7 {
+    background-color: #c73d47;
+    color: #ffffff;
+}
+.element8 {
+    background-color: #d04551;
+    color: #ffffff;
+}
+.element9 {
+    background-color: #dc4d5b;
+    color: #ffffff;
+}
+.element10 {
+    background-color: #e45565;
+    color: #ffffff;
+}
+.element11 {
+    background-color: #ef5e6f; /* lightest tint */
+    color: #000000; /* black text for contrast */
+}
+
+/* 474747 (Accent3) */
+.element12 {
+    background-color: #080808; /* darkest shade */
+    color: #ffffff; /* white text for contrast */
+}
+.element13 {
+    background-color: #141414;
+    color: #ffffff;
+}
+.element14 {
+    background-color: #202020;
+    color: #ffffff;
+}
+.element15 {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+.element16 {
+    background-color: #383838;
+    color: #ffffff;
+}
+.element17 {
+    background-color: #474747; /* original */
+    color: #ffffff;
+}
+.element18 {
+    background-color: #525252;
+    color: #ffffff;
+}
+.element19 {
+    background-color: #5e5e5e;
+    color: #ffffff;
+}
+.element20 {
+    background-color: #6a6a6a;
+    color: #ffffff;
+}
+.element21 {
+    background-color: #767676;
+    color: #ffffff;
+}
+.element22 {
+    background-color: #828282; /* lightest tint */
+    color: #000000; /* black text for contrast */
+}
+
+/* F2AF29 (Secondary) */
+.element23 {
+    background-color: #896516; /* darkest shade */
+    color: #ffffff; /* white text for contrast */
+}
+.element24 {
+    background-color: #9c7f19;
+    color: #ffffff;
+}
+.element25 {
+    background-color: #af891c;
+    color: #ffffff;
+}
+.element26 {
+    background-color: #c2931f;
+    color: #ffffff;
+}
+.element27 {
+    background-color: #d79d22;
+    color: #ffffff;
+}
+.element28 {
+    background-color: #f2af29; /* original */
+    color: #000000; /* black text for contrast */
+}
+.element29 {
+    background-color: #f6b732;
+    color: #000000;
+}
+.element30 {
+    background-color: #f7bd3b;
+    color: #000000;
+}
+.element31 {
+    background-color: #f8c444;
+    color: #000000;
+}
+.element32 {
+    background-color: #f9c94d;
+    color: #000000;
+}
+.element33 {
+    background-color: #fbd056; /* lightest tint */
+    color: #000000;
+}
+
+/* 181515 (Primary) */
+.element34 {
+    background-color: #000000; /* darkest shade */
+    color: #ffffff; /* white text for contrast */
+}
+.element35 {
+    background-color: #000000;
+    color: #ffffff;
+}
+.element36 {
+    background-color: #000000;
+    color: #ffffff;
+}
+.element37 {
+    background-color: #060606;
+    color: #ffffff;
+}
+.element38 {
+    background-color: #100f0f;
+    color: #ffffff;
+}
+.element39 {
+    background-color: #181515; /* original */
+    color: #ffffff;
+}
+.element40 {
+    background-color: #2a2929;
+    color: #ffffff;
+}
+.element41 {
+    background-color: #3e3d3d;
+    color: #ffffff;
+}
+.element42 {
+    background-color: #525151;
+    color: #ffffff;
+}
+.element43 {
+    background-color: #666565;
+    color: #ffffff;
+}
+.element44 {
+    background-color: #7a7979; /* lightest tint */
+    color: #000000; /* black text for contrast */
+}
+
+/* E0E0CE (Accent 2) */
+.element45 {
+    background-color: #6e6e5d; /* darkest shade */
+    color: #ffffff; /* white text for contrast */
+}
+.element46 {
+    background-color: #858574;
+    color: #ffffff;
+}
+.element47 {
+    background-color: #9b9b8a;
+    color: #ffffff;
+}
+.element48 {
+    background-color: #b1b1a1;
+    color: #ffffff;
+}
+.element49 {
+    background-color: #c8c8b8;
+    color: #ffffff;
+}
+.element50 {
+    background-color: #e0e0ce; /* original */
+    color: #000000; /* black text for contrast */
+}
+.element51 {
+    background-color: #e7e7da;
+    color: #000000;
+}
+.element52 {
+    background-color: #efefdf;
+    color: #000000;
+}
+.element53 {
+    background-color: #f7f7e4;
+    color: #000000;
+}
+.element54 {
+    background-color: #ffffff;
+    color: #000000;
+}
+.element55 {
+    background-color: #ffffff; /* lightest tint */
+    color: #000000;
+}

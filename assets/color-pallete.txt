@@ -1,0 +1,72 @@
+AD343E - accent
+474747 - accent3
+F2AF29 - secondary
+181515 - primary 
+E0E0CE - Accent 2
+
+
+
+AD343E (Accent)
+3a161a
+501c21
+672328
+7d272f
+932b34
+AD343E (original)
+c73d47
+d04551
+dc4d5b
+e45565
+ef5e6f
+
+474747 (Accent3)
+080808
+141414
+202020
+2c2c2c
+383838
+474747 (original)
+525252
+5e5e5e
+6a6a6a
+767676
+828282
+
+F2AF29 (Secondary)
+896516
+9c7f19
+af891c
+c2931f
+d79d22
+F2AF29 (original)
+f6b732
+f7bd3b
+f8c444
+f9c94d
+fbd056
+
+181515 (Primary)
+000000 (black)
+000000 (black)
+000000 (black)
+060606
+100f0f
+181515 (original)
+2a2929
+3e3d3d
+525151
+666565
+7a7979
+
+E0E0CE (Accent 2)
+6e6e5d
+858574
+9b9b8a
+b1b1a1
+c8c8b8
+E0E0CE (original)
+e7e7da
+efefdf
+f7f7e4
+ffffff (white)
+ffffff (white)
