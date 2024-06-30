@@ -148,14 +148,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
             */
 
-
-
-
-
-
-        console.log("Skill: " + skillAndAchievementSectionY);
-        console.log("last: " + lastScrollY);
-        console.log("current: " + currentScrollY);
     }
 
 
