@@ -15,7 +15,7 @@
 }
 
 .about #about-img{
-    width:102%;
+    width:80%;
     height: auto;
     transform: scale(.8);
     opacity: 0;

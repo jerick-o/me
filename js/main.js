@@ -53,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
         aboutImg.style.opacity = 1;
         aboutImg.style.transform = "scale(1)";
     }
+    if (isHalfInViewport(about)) {
+        aboutImg.style.opacity = .5;
+        aboutImg.style.transform = "scale(1)";
+    }
 
 
 
@@ -111,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (isHalfInViewport(about)) {
-            aboutImg.style.opacity = 1;
+            aboutImg.style.opacity = .5;
             aboutImg.style.transform = "scale(1)";
         }
 
@@ -163,3 +167,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for scroll event
     window.addEventListener('scroll', handleScroll);
 });
+
