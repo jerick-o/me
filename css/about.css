@@ -23,13 +23,16 @@
 }
 
 @media (max-width: 940px) {
-    #about-img {
+    .about #about-img{
         width:100%;
     }
 
     .about {
+        display: flex;
+        flex-direction: column;
         padding: 10px 20px;
         gap: 10px;
+        text-align: center;
     }
     
 }

@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let socialMargin = social.getBoundingClientRect().margin;
     let socialTop = social.getBoundingClientRect().top;
 
-    let educationPosition = educationSection.getBoundingClientRect().top;
-    let workPosition = educationSection.getBoundingClientRect().top;
+    let educationPosition = educationSection.getBoundingClientRect().y;
+    let workPosition = educationSection.getBoundingClientRect().y;
 
 
     if (isHalfInViewport(skillsSection) || skillAndAchievementSection.getBoundingClientRect().y <= 0) {
@@ -72,8 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
         let skillAndAchievementSectionY = skillAndAchievementSection.getBoundingClientRect().y;
 
         // Set the new position
-        educationSection.style.top = (educationPositionCurrent / 1.8) + 40 + "px";
-        workSection.style.top = (workPositionCurrent / 1.8) + 40 + "px";
+        if(currentScrollY>0){
+            educationSection.style.top = (educationPositionCurrent / 1.8) + 40 + "px";
+            workSection.style.top = (workPositionCurrent / 1.8) + 40 + "px";
+        }
+        else{
+            educationSection.style.top = educationPosition -140 + "px";
+            workSection.style.top = workPosition -140 +"px";
+        }
+       
 
 
 

@@ -48,3 +48,22 @@
     width:100%;
     background: linear-gradient(to top, #121010ee, #16131300);
 }
+
+
+@media (max-width: 940px) {
+.portfolio div{
+    display: block;
+    margin: 15px;
+    width: 100%;
+}
+
+.portfolio .portfolio-content{
+    margin: 0px 10px;
+}
+
+.portfolio h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+}

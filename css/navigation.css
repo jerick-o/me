@@ -1,14 +1,24 @@
 @media (max-width: 930px) {
   .navbar{
-    padding: 20px 00px;
+    padding: 20px 0px;
   }
 }
+
+@media (max-width: 400px) {
+  .navbar-toggler{
+    display: none;
+  }
+  .navbar-brand{
+    left: 0;
+    right: 0;
+  }
+}
+
 
 .navbar-brand img {
     max-height: 50px; /* Adjust max-height as needed */
     margin-right: 10px; /* Optional: Adds space between image and text */
     z-index: 2000;
-   
   }
 
 .navbar{

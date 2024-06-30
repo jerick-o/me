@@ -8,4 +8,12 @@
     text-align: center;
 }
 
+.footer a{
+    color: var(--secondary-50);
+}
+
+.footer a:hover{
+    color: var(--secondary-30);
+}
+
 
