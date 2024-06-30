@@ -1,0 +1,50 @@
+.portfolio{
+    padding: 100px 70px;
+    background-color: var(--primary-100);
+}
+
+.portfolio .portfolio-content{
+    margin: 0px 100px;
+}
+
+
+.portfolio div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.portfolio div div{
+    height: 300px;
+    flex: 1 1 calc(30% - 10px); /* Each item takes half the width minus the gap */
+    background-color: var(--primary-60);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+
+.portfolio div div img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio div div img:hover {
+    transform: scale(1) translate(0%, -25%);
+    opacity: 1;
+}
+
+
+.portfolio div div p{
+    position: absolute;
+    padding: 10px 30px;
+    bottom: -17px;
+    opacity: 1;
+    width:100%;
+    background: linear-gradient(to top, #121010ee, #16131300);
+}

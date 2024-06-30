@@ -1,4 +1,255 @@
-.navbar-brand img {
-    max-height: 40px; /* Adjust max-height as needed */
-    margin-right: 10px; /* Optional: Adds space between image and text */
+/* Styles for banner section */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-clip-circle-bg{
+   background: url("../images/SVG/banner-bg-img.svg");
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 40px;
+   margin-top: -80px;
+}
+
+.banner .video-clip-circle-border:hover{
+  box-shadow: 0px 0px 35px var(--primary-50);
+}
+
+.banner .video-clip-circle-border {
+  border-radius: 50%;
+  padding: 40px;
+  background: linear-gradient(var(--primary-80), var(--primary-80)) padding-box,
+    linear-gradient(0deg,var(--secondary-40), var(--secondary-40), var(--secondary-40), transparent,transparent ,transparent, var(--accent-30),var(--accent-30),var(--accent-30)) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  animation: rotateBorder 30s linear infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }  
+  100% {
+    transform: rotate(360deg);
+   
   }
+}
+
+@keyframes reverserotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }  
+  100% {
+    transform: rotate(-360deg);
+   
+  }
+}
+
+
+
+
+.banner .video-clip-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: reverserotateBorder 30s linear infinite;
+}
+
+.banner .video-clip-circle video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .video-clip-circle img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  object-fit: cover;
+  transition: all .4s ease-in-out;
+}
+
+.banner .bottom-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* Adjust as needed */
+  color: var(--primary-100);
+  /* Example text color using primary-100 color */
+}
+
+.banner .bottom-div h1 {
+  font-size: 2.5rem;
+  /* Example font size */
+}
+
+.bottom-div p {
+  font-size: 1.5rem;
+  /* Example font size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.banner .intro {
+  font-size: .9rem;
+  width: calc(100vh/1.2);
+  color: var(--accent2-100);
+  transition: color .4s ease-in-out;
+}
+
+.banner .intro:hover {
+  color: var(--accent2-60);
+}
+
+
+
+.work,
+.education {
+  width: 320px;
+  height: 320px;
+  border: 1px solid var(--primary-50);
+  padding: 20px 20px;
+  margin: 25px 50px;
+  position: relative;
+  font-size: .9rem;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #28528d22, #16131300);
+  bottom: 20px;
+  box-shadow: 20xp var(--primary-100);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 25px var(--primary-110);
+}
+
+.work {
+  left: 0;
+}
+
+.education {
+  right: 0;
+
+}
+
+.work h2,
+.education h2 {
+  font-weight: 100;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+ color: var(--primary-30);
+}
+
+ /*
+.work h2::before,
+.education h2::before {
+  content: "\f0b1";
+  Unicode for Font Awesome icon 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  display: inline-block;
+}
+*/
+
+.work .content,
+.education .content {
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  margin-top: 40px;
+}
+
+.work .content-text,
+.education .content-text {
+  display: flex;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.work .content img,
+.education .content img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.work .content p,
+.education .content p {
+  margin: 0;
+  text-align: left;
+  color: var(--primary-20);
+}
+
+.work .content .work-pos,
+.education .content .course {
+  margin: 0;
+  text-align: left;
+  color: var(--accent2-50);
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+
+
+.banner #social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-120);
+  padding: 10px 0;
+  margin-top: 25px;
+  position: relative;
+  transition: position, opacity .1s ease-in-out;
+}
+
+.banner #social a {
+  margin: 10px;
+  color: var(--primary-20);
+  transition: color .3s ease-in-out;
+  font-size: 1.3rem;
+}
+
+.banner #social a:hover {
+  color: var(--secondary-50);
+}
+
+@media (min-width: 940px) {
+
+  .work,
+  .education {
+    position: absolute;
+  }
+}
+
+@media (max-width: 940px) {
+  .video-clip-circle-bg{
+    margin-top: 0px;
+  }
+  .banner .intro {
+    width: 90%;
+  }
+
+  .work {
+    margin-top: 50px;
+  }
+
+  .work,
+  .education {
+    left: 40;
+    width: 80%;
+  }
+}

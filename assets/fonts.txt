@@ -1,0 +1,44 @@
+{
+  "global": {
+    "fontFamilies": {
+      "heading": "Arial",
+      "navigation": "Helvetica",
+      "caption": "Verdana",
+      "body": "Times New Roman"
+    },
+    "fontSizes": {
+      "heading": "32px",
+      "navigation": "18px",
+      "caption": "14px",
+      "body": "16px"
+    },
+    "fontWeights": {
+      "heading": "bold",
+      "navigation": "normal",
+      "caption": "italic",
+      "body": "normal"
+    }
+  },
+  "textStyles": {
+    "heading": {
+      "fontFamily": "{fontFamilies.heading}",
+      "fontSize": "{fontSizes.heading}",
+      "fontWeight": "{fontWeights.heading}"
+    },
+    "navigation": {
+      "fontFamily": "{fontFamilies.navigation}",
+      "fontSize": "{fontSizes.navigation}",
+      "fontWeight": "{fontWeights.navigation}"
+    },
+    "caption": {
+      "fontFamily": "{fontFamilies.caption}",
+      "fontSize": "{fontSizes.caption}",
+      "fontWeight": "{fontWeights.caption}"
+    },
+    "body": {
+      "fontFamily": "{fontFamilies.body}",
+      "fontSize": "{fontSizes.body}",
+      "fontWeight": "{fontWeights.body}"
+    }
+  }
+}

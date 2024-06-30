@@ -1,0 +1,125 @@
+.skill-and-achievement{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    padding: 0 60px;
+}
+
+
+@media (max-width: 940px) {
+  .skill-and-achievement{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.skill-and-achievement h2{
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+/* Styling for each section */
+.skills, .achievement {
+    margin-right: 20px; 
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity, margin-top .6s ease-in-out;
+    margin-top: 40px;
+}
+
+
+
+.skills .content,
+.achievement .content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.skills .content-text,
+.achievement .content-text {
+  display: flex;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.skills .content i,
+.achievement .content i {
+ font-size: 1.3rem;
+ margin-right: 15px;
+ color: var(--accent-50);
+}
+
+.skills .content img,
+.achievement .content img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--accent2-20);
+  padding: 4px;
+}
+
+.skills .content p,
+.achievement .content p {
+  margin: 0;
+  text-align: left;
+  color: var(--primary-20);
+}
+
+.skills .progress-bar {
+  width: 100px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--accent2-40); /* Background color of the progress bar container */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow to round corners properly */
+}
+
+.skills .content .name,
+.achievement .content .name {
+  color: var(--accent2-20);
+}
+
+.skills .progress {
+  height: 100%;
+  background-color: var(--accent-50);; /* Mint blue-green color for the progress indicator */
+  width: 0; /* Initial width of the progress bar; adjust with inline style */
+  transition: width 0.3s ease-in-out; /* Smooth transition animation */
+}
+.activities{
+  
+}
+.activities div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+   
+}
+
+.activities div div{
+    width: 400px;
+    height: auto;
+    flex: 1;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    opacity: .7;
+    margin-left: 50px;
+}
+
+.activities div div img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.activities div div p{
+  position: absolute;
+  padding: 20px 30px;
+  bottom: -17px;
+  opacity: 1;
+  width:100%;
+}

@@ -1,0 +1,21 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 150px;
+    gap: 10px;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about img {
+    height: 700px;
+}
+
+.about #about-img{
+    transform: scale(.8);
+    opacity: 0;
+    transition: transform .6s ease-in-out;
+}

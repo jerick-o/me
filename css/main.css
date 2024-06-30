@@ -1,0 +1,116 @@
+::selection {
+    background-color: var(--accent-70); /* Specify your desired background color */
+    color: var(--accent2-20); /* Specify your desired text color */
+}
+
+body {
+    position: relative;
+    /* Ensure positioning context for ::before */
+    background-color: var(--primary-110);
+    font-family: 'Aleo', sans-serif;
+    /* Use Aleo font */
+    letter-spacing: 0.06em;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    z-index: -1000;
+    opacity: .3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: radial-gradient(circle, rgba(122, 92, 21, .2), rgba(122, 92, 21, .2),rgba(122, 92, 21, 0),rgba(122, 92, 21, 0));*/
+   /* background: radial-gradient(circle, rgba(199, 117, 24, 0.2), rgba(199, 117, 24, .2), rgba(199, 117, 24, 0), rgba(199, 117, 24, 0));*/
+    background: radial-gradient(circle, rgba(50, 96, 222, 0.2), rgba(24, 62, 199, 0.2), rgba(199, 117, 24, 0), rgba(199, 117, 24, 0));
+}
+
+
+p {
+    color: var(--accent2-50);
+    font-weight: 100;
+    font-size: .9rem;
+}
+
+
+h1 {
+    color: var(--secondary-50);
+}
+
+
+h2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--accent-20);
+}
+
+
+h3 {
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: var(--accent-30);
+}
+
+
+@media (max-width: 930px) {
+    .box-container {
+        display: none;
+    }
+}
+
+.bg {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+}
+
+.box-container {
+
+    top: 1%;
+    
+    position: relative;
+    overflow: hidden;
+    mix-blend-mode: overlay;
+    opacity: .2;
+}
+
+.box-container:nth-child(2) {
+    transform: rotate(180deg);
+}
+
+.box {
+    width: 700px;
+    height: 700px;
+    margin-left: -65%;
+    background-color: var(--primary-60);
+    transform: rotate(-45deg);
+    opacity: .4;
+    box-shadow: 10px #000000ff;
+    position: relative;
+}
+
+.box:before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    background-color: var(--primary-30);
+    position: absolute;
+    box-shadow: 1px #000000ff;
+    opacity: .7;
+}
+
+.box::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    background-color: var(--primary-10);
+    position: absolute;
+    box-shadow: 10px #000000ff;
+    opacity: .9;
+}
