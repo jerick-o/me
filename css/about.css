@@ -29,10 +29,16 @@
 
     .about {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         padding: 10px 20px;
         gap: 10px;
         text-align: center;
+    }
+
+    .about p{
+        padding: 0px 30px;
     }
     
 }

@@ -1,31 +1,40 @@
-.portfolio{
+.portfolio {
     padding: 100px 70px;
     background-color: var(--primary-100);
 }
 
-.portfolio .portfolio-content{
+.portfolio .portfolio-content {
     margin: 0px 100px;
 }
 
-.portfolio h2{
+.portfolio h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-.portfolio div{
+
+.portfolio div {
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
 }
 
-.portfolio div div{
+.portfolio div div {
     height: 300px;
-    flex: 1 1 calc(40% - 10px); /* Each item takes half the width minus the gap */
+    flex: 1 1 calc(40% - 10px);
+    /* Each item takes half the width minus the gap */
     background-color: var(--primary-60);
     color: white;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: opacity 0.3s ease;
+    border: 1px solid var(--primary-30);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.portfolio div div:hover {
+  box-shadow: 0px 0px 15px var(--secondary-70);
+
 }
 
 .portfolio div div .view {
@@ -35,16 +44,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease;
-    font-size: 24px; /* Adjust font size */
-    font-weight: bold; /* Make it bold */
-    color: #fff; /* White color */
+    font-size: 24px;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Make it bold */
+    color: #fff;
+    /* White color */
 }
 
 
 .portfolio div div img {
     width: 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: all 0.7s ease-in-out;
     cursor: pointer;
 }
@@ -55,32 +67,38 @@
 }
 
 
-.portfolio div div p{
+.portfolio div div p {
     position: absolute;
     padding: 10px 30px;
     bottom: -17px;
     opacity: 1;
-    width:100%;
+    width: 100%;
     background: linear-gradient(to top, #121010ee, #16131300);
 }
 
 
 @media (max-width: 940px) {
-.portfolio div{
-    display: block;
-    margin: 15px;
-    width: 100%;
+
+    .portfolio {
+        padding: 70px 30px;
+    }
+
+    .portfolio div {
+        display: block;
+        margin: 45px 0px;
+    }
+
+    .portfolio .portfolio-content {
+        margin: 0px 10px;
+    }
+
+    .portfolio div div {
+        height: 200px;
+    }
+
+    .portfolio h3 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
 }
-
-.portfolio .portfolio-content{
-    margin: 0px 10px;
-}
-
-.portfolio h3{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-}
-
-

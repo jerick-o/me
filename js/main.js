@@ -43,16 +43,24 @@ document.addEventListener('DOMContentLoaded', function () {
     let workPosition = educationSection.getBoundingClientRect().y;
 
 
-
-
-    if (isHalfInViewport(skillsSection) || skillAndAchievementSection.getBoundingClientRect().y <= 0) {
+    if (isMobileDevice()) {
         achievementSection.style.opacity = 1;
-        achievementSection.style.marginTop = "200px";
-        setTimeout(function () {
-            skillsSection.style.opacity = 1;
-            skillsSection.style.marginTop = "200px";
+        skillsSection.style.opacity = 1;
+        skillsSection.style.marginTop = "20px";
+        achievementSection.style.marginTop = "20px";
 
-        }, 500);
+    }
+    else {
+        if (isHalfInViewport(skillsSection) || skillAndAchievementSection.getBoundingClientRect().y <= 0) {
+            achievementSection.style.opacity = 1;
+            achievementSection.style.marginTop = "200px";
+            setTimeout(function () {
+                skillsSection.style.opacity = 1;
+                skillsSection.style.marginTop = "200px";
+
+            }, 500);
+        }
+
     }
 
     if (isHalfInViewport(about)) {
@@ -91,7 +99,19 @@ document.addEventListener('DOMContentLoaded', function () {
             else {
                 educationSection.style.top = "300px";
                 workSection.style.top = "300px";
-            } 
+            }
+
+            if (isHalfInViewport(skillsSection)) {
+
+                achievementSection.style.opacity = 1;
+                achievementSection.style.marginTop = "200px";
+                setTimeout(function () {
+                    skillsSection.style.opacity = 1;
+                    skillsSection.style.marginTop = "200px";
+
+                }, 500);
+            }
+
         }
 
 
@@ -113,16 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
         //       behavior: 'smooth'
         //  });
         //}
-        if (isHalfInViewport(skillsSection)) {
-
-            achievementSection.style.opacity = 1;
-            achievementSection.style.marginTop = "200px";
-            setTimeout(function () {
-                skillsSection.style.opacity = 1;
-                skillsSection.style.marginTop = "200px";
-
-            }, 500);
-        }
 
         if (isHalfInViewport(about)) {
             aboutImg.style.opacity = .5;
