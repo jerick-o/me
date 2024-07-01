@@ -11,6 +11,10 @@ function isHalfInViewport(element) {
     );
 }
 
+function isMobileDevice() {
+    return window.matchMedia("(max-width: 900px)").matches;
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
     let lastScrollY = window.scrollY;
@@ -39,12 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let workPosition = educationSection.getBoundingClientRect().y;
 
 
+
+
     if (isHalfInViewport(skillsSection) || skillAndAchievementSection.getBoundingClientRect().y <= 0) {
         achievementSection.style.opacity = 1;
-        achievementSection.style.marginTop = "20px";
+        achievementSection.style.marginTop = "200px";
         setTimeout(function () {
             skillsSection.style.opacity = 1;
-            skillsSection.style.marginTop = "20px";
+            skillsSection.style.marginTop = "200px";
 
         }, 500);
     }
@@ -75,16 +81,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let skillAndAchievementSectionY = skillAndAchievementSection.getBoundingClientRect().y;
 
-        // Set the new position
-        if(currentScrollY>0){
-            educationSection.style.top = (educationPositionCurrent / 1.8) + 40 + "px";
-            workSection.style.top = (workPositionCurrent / 1.8) + 40 + "px";
+
+        if (!isMobileDevice()) {
+            // Set the new position
+            if (currentScrollY > 0) {
+                educationSection.style.top = (educationPositionCurrent / 1.8) + 40 + "px";
+                workSection.style.top = (workPositionCurrent / 1.8) + 40 + "px";
+            }
+            else {
+                educationSection.style.top = "300px";
+                workSection.style.top = "300px";
+            } 
         }
-        else{
-            educationSection.style.top = educationPosition -140 + "px";
-            workSection.style.top = workPosition -140 +"px";
-        }
-       
+
+
 
 
 
@@ -106,10 +116,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isHalfInViewport(skillsSection)) {
 
             achievementSection.style.opacity = 1;
-            achievementSection.style.marginTop = "20px";
+            achievementSection.style.marginTop = "200px";
             setTimeout(function () {
                 skillsSection.style.opacity = 1;
-                skillsSection.style.marginTop = "20px";
+                skillsSection.style.marginTop = "200px";
 
             }, 500);
         }

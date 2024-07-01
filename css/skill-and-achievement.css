@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: top;
     padding: 0 60px;
+    gap: 50px;
 }
 
 
@@ -10,11 +11,18 @@
   .skill-and-achievement{
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
   .activities div div{
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 200px;
+
    
+  }
+  
+
+  .skills .skills-grid .content{
+    flex: 1 1 calc(20% - 16px);
   }
 }
 
@@ -30,9 +38,22 @@
     border-radius: 8px;
     opacity: 0;
     transition: opacity, margin-top .6s ease-in-out;
-    margin-top: 40px;
+    margin-top: 300px;
 }
 
+.skills{
+  flex: 1;
+}
+
+.skills .skills-grid{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+
+}
+.skills .skills-grid .content{
+  flex: 1 1 calc(50% - 16px);
+}
 
 
 .skills .content,
